@@ -143,9 +143,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="curl\curl.h" />
     <ClInclude Include="curl\curlver.h" />
     <ClInclude Include="curl\easy.h" />
@@ -159,6 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <Library Include="curl\lib\libcurl_a.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
